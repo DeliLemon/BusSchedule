@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.home.schoolbusschedule.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_schedule"
+        android:name="com.home.schoolbusschedule.ui.manage.ManageFragment"
+        android:label="@string/menu_schedules"
+        tools:layout="@layout/fragment_manage" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.home.schoolbusschedule.ui.search.SearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.home.schoolbusschedule.ui.tools.ToolsFragment"
+        android:label="@string/action_settings"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.home.schoolbusschedule.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_service"
+        android:name="com.home.schoolbusschedule.ui.send.SendFragment"
+        android:label="@string/menu_service"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/nav_personage"
+        android:name="com.home.schoolbusschedule.ui.personage.PersonageFragment"
+        android:label="个人"
+        tools:layout="@layout/fragment_personage"
+        />
+</navigation>

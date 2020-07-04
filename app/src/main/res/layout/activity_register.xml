@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.register.schoolbusschedule.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText5_register_account"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="学号/工号"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText6_register_passwd1"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="密码（0-9、a-Z、. _）"
+                android:inputType="text|textPassword" />
+
+            <EditText
+                android:id="@+id/editText7_register_passwd2"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="确认密码"
+                android:inputType="text|textPassword" />
+
+            <EditText
+                android:id="@+id/editText8_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="姓名"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editText9_register_class"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="30dp"
+                android:ems="10"
+                android:hint="班级/部门(物联网172/信科院)"
+                android:inputType="text" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton3_register_identify"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:checked="true"
+                    android:onClick="changeId"
+                    android:text="学生"
+                    tools:ignore="OnClick" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="changeId"
+                    android:text="教师" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/shape_register_btn"
+                android:onClick="sendRegister"
+                android:text="注册" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

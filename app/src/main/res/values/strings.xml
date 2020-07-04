@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">校车通</string>
+    <string name="title_activity_home">主页</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">昵称</string>
+    <string name="nav_header_subtitle">201710214600</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">设置</string>
+
+    <string name="menu_home">首页</string>
+    <string name="menu_schedules">管理行程</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_service">服务</string>
+</resources>

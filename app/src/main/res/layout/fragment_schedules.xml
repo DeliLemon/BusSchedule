@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/schedule_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:layout_margin="20dp"
+            android:divider="@android:color/background_light"
+            android:dividerHeight="20dp">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorDarkGreen">
+
+            <Button
+                android:id="@+id/button_home_schedules"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorDarkGreen"
+                android:drawableTop="@mipmap/home3"
+                android:onClick="switchView"
+                android:text="首页" />
+
+            <Button
+                android:id="@+id/button2_manage_schedules"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorDarkGreen"
+                android:drawableTop="@drawable/ic_menu_gallery"
+                android:onClick="switchView"
+                android:text="管理" />
+
+            <Button
+                android:id="@+id/button3_search_schedules"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorDarkGreen"
+                android:drawableTop="@mipmap/search4"
+                android:onClick="switchView"
+                android:text="搜索" />
+
+            <Button
+                android:id="@+id/button4_settings_schedules"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorDarkGreen"
+                android:onClick="switchView"
+                android:drawableTop="@drawable/ic_menu_manage"
+                android:text="设置" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/floatbutton_add_home"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|bottom"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="90dp"
+    android:src="@android:drawable/ic_input_add"
+    />
+
+</FrameLayout>
